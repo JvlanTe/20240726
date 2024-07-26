@@ -11,6 +11,7 @@ df_with_date = df[df["Date"] == date]
 if df_with_date.empty:
     print("データが見つかりません")
 # japanmapが日本語対応していないためリネームする作業をしている？
+# 訂正 japanmapがあらかじめ漢字で設定している
 else:
     prefecture_name_mapping = {
         "Hokkaido": "北海道",
